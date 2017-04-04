@@ -1,0 +1,40 @@
+--- 
++++ 
+@@ -7,7 +7,7 @@ database=branches
+ db_pagesize=4096
+ HEADER=END
+  \00\00\00\00
+- \02\00\00\00
++ \03\00\00\00
+ DATA=END
+ VERSION=3
+ format=print
+@@ -21,6 +21,8 @@ database=tokens
+  Makefile\00
+  \01\00\00\00
+  main.c\00
++ \02\00\00\00
++ README.md\00
+ DATA=END
+ VERSION=3
+ format=print
+@@ -32,6 +34,8 @@ database=tokens_idx
+ HEADER=END
+  Makefile\00
+  \00\00\00\00
++ README.md\00
++ \02\00\00\00
+  main.c\00
+  \01\00\00\00
+ DATA=END
+@@ -49,4 +53,10 @@ database=versions
+  \00\00\00\00
+  \02\00\00\00
+  \01\00\00\00
++ \03\00\00\00
++ \00\00\00\00
++ \03\00\00\00
++ \02\00\00\00
++ \03\00\00\00
++ \01\00\00\00
+ DATA=END
